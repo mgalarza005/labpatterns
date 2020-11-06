@@ -2,6 +2,7 @@ package factory;
 
 
 import javax.swing.JFrame;
+
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
@@ -30,7 +31,7 @@ public class  MedicalGUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public MedicalGUI(Medicament med) {
+	public MedicalGUI(Medicament m2) {
 		setTitle("Medical treatments");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 435);
@@ -89,8 +90,8 @@ public class  MedicalGUI extends JFrame {
 		medicamentLabel.setFont(new Font("Lucida Grande", Font.BOLD, 13));
 		medicamentLabel.setBounds(257, 17, 187, 16);
 		contentPane.add(medicamentLabel);
-		medicamentLabel.setText(med.getName());
-		m=med;
+		medicamentLabel.setText(m2.getName());
+		m=m2;
 		this.setVisible(true);
 		
 	}
