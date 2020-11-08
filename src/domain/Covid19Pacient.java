@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Observable;
 import java.util.Set;
+
+import adapter.InvertedIterator;
+import iterator.Covid19PacientInvertedIterator;
 import iterator.Covid19PacientIterator;
 
 public class Covid19Pacient extends Observable{
@@ -40,6 +43,9 @@ public class Covid19Pacient extends Observable{
 	}
 	public Iterator<Symptom> iterator(){
 		return new Covid19PacientIterator(new ArrayList<Symptom>(symptoms.keySet()));
+	}
+	public InvertedIterator invertedIterator(){
+		return new Covid19PacientInvertedIterator(new ArrayList<Symptom>(symptoms.keySet()));
 	}
 	
 	public Symptom getSymptomByName(String symptomName) {

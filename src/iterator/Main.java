@@ -20,7 +20,7 @@ import domain.Symptom;
 			p.addSymptom(new Symptom("s5", 10, 10), 5);
 			
 			Iterator i=p.iterator();
-			while(i.hasNext())
+			while(i.hasNext() )
 				System.out.println(i.next());
 
 		}
