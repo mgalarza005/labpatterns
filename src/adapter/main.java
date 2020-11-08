@@ -2,6 +2,7 @@ package adapter;
 
 import java.util.Iterator;
 
+
 import domain.Covid19Pacient;
 import domain.Symptom;
 

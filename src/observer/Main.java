@@ -13,9 +13,9 @@ public class Main {
 		Observable p = new Covid19Pacient("Aitor", 35);
 		PacientObserverGUI pCUI = new PacientObserverGUI((Covid19Pacient) p);
 		PacientSymptomGUI f = new PacientSymptomGUI((Covid19Pacient) p);
-		SemaphorGUI s = new SemaphorGUI((Covid19Pacient) p);
 		PacientThermometerGUI pt = new PacientThermometerGUI((Covid19Pacient) p);
-		
+		SemaphorGUI s = new SemaphorGUI((Covid19Pacient) p);
+
 		
 		
 		
